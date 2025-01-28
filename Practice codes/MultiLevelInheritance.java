@@ -7,6 +7,7 @@
 
 import java.util.Scanner;
 
+//Super class
 class Plate {
 
     protected double length;

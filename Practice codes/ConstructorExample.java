@@ -4,7 +4,7 @@ class Student{
     private int age;
 
     // no return type
-    // static, abstract, synchronized -- keywords are not allowed
+    // static, abstract, synchronized, final -- keywords are not allowed
     // Default Constructor
     public Student(){
     
