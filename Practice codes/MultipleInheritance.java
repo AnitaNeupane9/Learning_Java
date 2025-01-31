@@ -1,26 +1,34 @@
-// Not supported through class in java
-class A{
-    public void name(){
-        System.out.println("This is first parent.");
-    }
+// Multiple Inheritance through Interface
+
+interface Printable {
+    void print();
+    void display();
 }
 
-class B{
-    public void name(){
-        System.out.println("This is second parent.");
-    }
+interface Showable{
+    void show();
+    void display();
 }
 
-class C extends A,B {
+public class MultipleInheritance implements Showable, Printable {
+
+    public void print() {
+        System.out.println("Hello");
+    }
+
+    public void show() {
+        System.out.println("Welcome");
+    }
+
     public void display(){
-        System.out.println("This is child class.");
+        System.out.println("This is a display method");
     }
-}
 
-public class MultipleInheritance {
-    public static void main(String[] args) {
-        C c = new C();
-        c.name();
+    public static void main(String args[]) {
+        MultipleInheritance obj = new MultipleInheritance();
+        obj.print();
+        obj.show();
+        obj.display();
     }
 }
 
@@ -30,3 +38,32 @@ public class MultipleInheritance {
 // 2. Polymorphism  --> poly = many and morphism = forms
 // 3. Abstraction
 // 4. Encapsulation
+
+
+// // Multiple Inheritance is Not supported through class in java
+// class A{
+//     public void name(){
+//         System.out.println("This is first parent.");
+//     }
+// }
+
+// class B{
+//     public void name(){
+//         System.out.println("This is second parent.");
+//     }
+// }
+
+// class C extends A,B {
+//     public void display(){
+//         System.out.println("This is child class.");
+//     }
+// }
+
+// public class MultipleInheritance {
+//     public static void main(String[] args) {
+//         C c = new C();
+//         c.name();
+//     }
+// }
+
+

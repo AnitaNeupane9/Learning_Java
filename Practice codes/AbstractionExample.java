@@ -33,6 +33,9 @@ class Cat extends Animal{
 
 public class AbstractionExample {
     public static void main(String[] args) {
+
+        //Instantiated = creating Instance = creating object
+        // Animal animal = new Animal();   // This will give error because Animal is abstract class and we cannot instantiate abstract class directly.
         
         // Dog dog = new Dog();  
         // Cat cat = new Cat();
