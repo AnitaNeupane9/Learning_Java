@@ -1,4 +1,5 @@
-
+// parent class /  Super class / Base class
+// instance variable, constructor, method --> this / super
 class Animal {
     String color = "white";
 
@@ -7,6 +8,7 @@ class Animal {
     }
 }
 
+// child class / sub class / Derived class
 class Dog extends Animal {
 
     String color = "black";
@@ -15,6 +17,7 @@ class Dog extends Animal {
         super.eat();
         System.out.println("Dog is eating...");
     }
+    
     void printColor() {
         System.out.println(color);
         System.out.println(super.color);
